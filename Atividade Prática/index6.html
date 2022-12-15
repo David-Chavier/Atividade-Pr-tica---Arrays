@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    <script>
+
+        // Escreva um algoritmo que solicite ao usuário a entrada de 5 nomes,
+        // e que exiba a lista desses nomes na tela. Após exibir essa lista, o
+        // programa deve mostrar também os nomes na ordem inversa em
+        // que o usuário os digitou.
+
+        // Ex:
+        // Entrada: Édson, Marcelo, Letícia, Ju, Thobias
+        // Saída: Thobias, Ju, Letícia, Marcelo, Édson
+
+        const nome1 = prompt('Digite o nome 1')
+        const nome2 = prompt('Digite o nome 2')
+        const nome3 = prompt('Digite o nome 3')
+        const nome4 = prompt('Digite o nome 4')
+        const nome5 = prompt('Digite o nome 5')
+
+        let array = [nome1, nome2, nome3, nome4, nome5]
+
+        for(let index = 0; index < array.length; index++){
+                    console.log(array[index])
+        }
+
+        let arrayreversed = array.reverse()
+
+        for(let index = 0; index < arrayreversed.length; index++){
+                    console.log(arrayreversed[index])
+        }
+
+    </script>
+</body>
+</html>
